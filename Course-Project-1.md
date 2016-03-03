@@ -54,8 +54,8 @@ mean_int[104] ##835 interval has max steps of 206.1698
 ## 206.1698
 ```
 
-```r
 ##Impute Missing Values 
+```r
 sum(is.na(raw)) ##2304 number of NA
 ```
 
@@ -87,8 +87,9 @@ hist(imputed_dailysteps, col = "red",
 ```r
 mean_imputed_steps <- mean(imputed_dailysteps)
 median_imputed_steps <- median(imputed_dailysteps)
-
+```
 ##Differences in Weekday/Weekend
+```r
   ##differentiate between weekday/weekend
 raw$type <- ifelse(weekdays(raw$date)== "Saturday" 
             | weekdays(raw$date) == "Sunday", "weekend", "weekday")
