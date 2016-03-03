@@ -25,9 +25,10 @@ hist(dailysteps, xlab= "Steps per day", main= "Step Histogram",
 ```r
 mean_steps <- mean(dailysteps)
 median_steps <- median(dailysteps)
+```
 
-
-##Average Daily Activity Pattern
+##What is the average daily activity pattern?
+```r
 mean_int <- tapply(raw$steps, raw$interval, mean, na.rm=TRUE)
 plot(mean_int, type = "l", xlab= "Time Interval", 
      ylab= "Average Steps", main = "Time Series Plot of Steps")
