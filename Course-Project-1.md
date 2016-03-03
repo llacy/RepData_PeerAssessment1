@@ -3,13 +3,7 @@
 ```r
 setwd("C:/Users/Luke/Desktop/Johns Hopkins Data Science/Reproducible Research/Week 1")
 install.packages("knitr")
-```
 
-```
-## Error in install.packages : Updating loaded packages
-```
-
-```r
 library(knitr)
 #Read data
 unzip("repdata-data-activity.zip")
