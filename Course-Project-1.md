@@ -12,6 +12,7 @@ library(lubridate)
 raw$date <-ymd(raw$date)
 ```
 ##What is the mean total number of steps taken per day?
+```r
 na <- raw[is.na(raw)]
 dailysteps <- tapply(raw$steps, raw$date, sum, na.rm = TRUE)
 dailysteps <- dailysteps[!is.na(dailysteps)]
