@@ -1,5 +1,5 @@
 
-
+##Loading and preprocessing the data
 ```r
 setwd("C:/Users/Luke/Desktop/Johns Hopkins Data Science/Reproducible Research/Week 1")
 install.packages("knitr")
