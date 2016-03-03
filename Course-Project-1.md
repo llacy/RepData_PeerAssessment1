@@ -11,7 +11,7 @@ raw <- read.csv("activity.csv", header = TRUE, sep = ",")
 library(lubridate)
 raw$date <-ymd(raw$date)
 ```
-##Mean total number of steps/day
+##What is the mean total number of steps taken per day?
 na <- raw[is.na(raw)]
 dailysteps <- tapply(raw$steps, raw$date, sum, na.rm = TRUE)
 dailysteps <- dailysteps[!is.na(dailysteps)]
