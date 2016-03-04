@@ -20,7 +20,7 @@ raw$date <-ymd(raw$date)
 ```
 
 ## What is mean total number of steps taken per day?
-```{r}
+```{r hist}
 na <- raw[is.na(raw)]
 dailysteps <- tapply(raw$steps, raw$date, sum, na.rm = TRUE)
 dailysteps <- dailysteps[!is.na(dailysteps)]
