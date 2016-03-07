@@ -9,7 +9,7 @@ install.packages("knitr")
 ## Error in install.packages : Updating loaded packages
 ```
 
-```r echo = TRUE
+```r 
 library(knitr)
 #Read data
 unzip("repdata-data-activity.zip")
